@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Demo on Forms</h1>
+
+    <form method="post" action="./tables.html" target="_blank ">
+      <fieldset>
+      <label>Username : <sup style="color: red;">*</sup> </label>
+      <input
+        type="text"
+        name="fname"
+        placeholder="Enter your user name"
+        pattern="[A-Za-z]+"
+        title="Enter only the text"
+        required
+      />
+      <label>Last name : <sup style="color: red;">*</sup> </label>
+      <input type="text" name="lname" placeholder="Enter your Laste name" />
+
+      <br /><br />
+
+      <label>Email adderss : </label>
+      <input type="email" name="email" placeholder="Enter your Email Adress" />
+
+
+      <label> password : </label>
+      <input type="password" name="psw" placeholder="Enter your password" required />
+
+      <br /><br />
+      <label>Contact Number : </label>
+      <input
+        type="tel"
+        name="phmo"
+        pattern="[6-9]{1}[0-9]{9}"
+        placeholder="Enter yout contact number"
+      />
+
+      <label>Age : </label>
+      <input type="number" name="age" placeholder="Age" min="0" max="99" required />
+      <input type="range" name="range" min="20" max="34">
+      <br /><br />
+  </fieldset>
+  <br><br>
+      <label> Date and Time </label>
+      <input type="date" name="date">
+      <input type="time" name="time">
+      <input type="datetime-local" name="datetime">
+      <input type="month" name="month">
+      <input type="week" name="week">
+      <br><br>
+
+      <label>Serch Feild</label>
+      <input type="search" name="serch" placeholder="serch here">
+      <input type="url" name="url" placeholder="Enter the url">
+      <input type="file" name="file">
+      <br><br>
+
+      <label>Gender : </label>
+
+      <label for="m"> male</label>
+      <input checked type="radio" name="Gender" value="male" id="m">
+
+      <label for="f">Femail</label>
+      <input type="radio" name="Gender" value="femail" id="f">
+
+      <label for="o">others</label>
+      <input type="radio" name="Gender" value="others" id="o" disabled>
+      <br><br>
+
+      <label> colur</label>
+        <input type="color">
+        
+      <label> Languages </label>
+
+      <label for="e">English</label>
+      <input type="checkbox" name="Languages" id="e" value="English" >
+
+      <label for="k">Kannada</label>
+      <input type="checkbox" name="Languages" id="k" value="Kannada">
+
+      <label for="h">Hindi</label>
+      <input type="checkbox" name="Languages" id="h" value="Hindi">
+      <br><br>
+
+      <label for="">Place :</label>
+      <select name="place">
+        <option selected disabled >--- select a place --- </option>
+        <option value="ban">Banglore</option>
+        <option value="goa">Goa</option>
+        <option value="mys">Mysore</option>
+        <option value="madd">Maddur</option>
+        <option value="man">Mandhya</option>
+      </select>
+      <br><br>
+      <input type="reset" />
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>

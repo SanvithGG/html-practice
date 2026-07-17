@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table forms</title>
+  </head>
+  <body>
+    <h1 align="center" >INPUT FIELDS</h1>
+    <form>
+      <table border="4" align="center" cellpadding="20" >
+        <tr>
+          <th>SL NO</th>
+          <th>INPUT TYPES</th>
+          <th>EXAMPLES</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Text</td>
+          <td>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter your user name"
+              pattern="[A-Za-z]+"
+              title="Enter only the text"
+              required style="width: 250px;"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td> Number</td>
+          <td>
+            <input
+              type="number"
+              name="numb"
+              placeholder="Enter your phone number"
+              style="width: 250px;"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Email</td>
+          <td><input type="email" name="mail" placeholder="Enter your mail address" style="width: 250px;" ></td>          
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>password</td>
+          <td>
+            <input type="password" name="psw" placeholder="***************" style="width: 250px;">
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Date</td>
+          <td>
+            <input type="date" name="date" placeholder="Enter the date of join" >
+          </td>
+        </tr>
+        
+        <tr>
+          <td>6</td>
+          <td>Time</td>
+          <td>
+            <input type="time" name="time" placeholder="Enter the time ">
+          </td>
+        </tr>
+        <tr>
+
+          <td>7</td>
+          <td>Date time</td>
+          <td>
+            <input type="datetime" name="dati" placeholder="Enter the date and time">
+          </td>
+        </tr>
+        
+        <tr>
+          <td>8</td>
+          <td>datetime-local</td>
+          <td>
+            <input type="datetime-local" name="dttime">
+          </td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Month</td>
+          <td>
+            <input type="month" name="mon">
+          </td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>week</td>
+          <td>
+            <input type="week" name="week">
+          </td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Range</td>
+          <td>
+            <input type="range">
+          </td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Serch</td>
+          <td>
+            <input type="search" placeholder="enter the name to serch">
+          </td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Radio</td>
+          <td>
+            <label for="m">male</label>
+            <input type="radio" name="Gender" value="male" id="m">
+            <label for="f">female</label>
+            <input type="radio" name="Gender" value="femail" id="f">
+            <label for="o">others</label>
+            <input type="radio" name="Gender" id="o">
+          </td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>checkbox</td>
+          <td>
+            <label for="k">Kannada</label>
+              <input type="checkbox" name="Languages" id="k">
+            <label for="e">English</label>
+              <input type="checkbox" name="Languages" id="e">
+            <label for="h">Hindi</label>
+              <input type="checkbox" name="Languages" id="h">
+          </td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Drop Down</td>
+          <td>
+            <select name="Places" id="">
+              <option>---- choose a place ur in rn ---- </option>
+              <option value="go">Goa</option>
+              <option value="ban">Bangalore</option>
+              <option value="shiv">Shivamogga</option>
+              <option value="chick">Chikmagalur</option>
+              <option value="mys">Mysore</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Color</td>
+          <td>
+            <input type="color" name="col" style="width: 250px;">
+          </td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>url</td>
+          <td>
+            <input type="url" name="url" placeholder="Enter the url">
+          </td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Reset</td>
+          <td>
+            <input type="reset">
+          </td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Submit</td>
+          <td>
+            <input type="submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
