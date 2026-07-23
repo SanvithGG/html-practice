@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    text-shadow: 8px 8px 8px blue;
+    letter-spacing: 2px;
+}
+.hello{
+    width: 70%;
+    margin: auto;
+
+    text-align: justify;
+    /* left (default) / center / right / justify */
+
+    text-indent: 50px; /*  giving tab space */
+    line-height: 25px; /*used to increse or decrese the line height*/
+    word-wrap: 10px;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    /* lowercasw / uppercase / capitalize */
+
+    /* text-decoration-line: underline; */
+    /* underline / overline / line-through */
+    /* text-decoration-style: dotted; */
+    /* none (default) / solid / dashed / dotted / double  */
+    /* text-decoration-thickness: 2px; */
+    /* text-decoration-color: blue; */
+
+    text-decoration: underline  2px rgb(102, 18, 212);
+}
+
+#para2{
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    line-height: 30px;
+
+    /* font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: sans-serif;
+    font-variant: small-caps; */
+
+    font: bold italic 20px sans-serif ;
+}

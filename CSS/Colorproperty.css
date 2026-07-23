@@ -1,0 +1,35 @@
+.color{
+    color: brown;
+    text-decoration: underline;
+}
+.Hardcode{
+    color:white;
+    background: #b41616;
+}
+.Hexadecimal{
+    color: #3456dd;
+    background: #bfc510;
+    width: 150px;
+}
+.decimal{
+    color: rgb(49,59,99);
+    background:rgb(0,33,0);
+}
+h3{
+    width: 150px;
+}
+
+.p1{
+    color: white;
+    background: black;
+}
+
+.p2{
+    color: #a5e809;
+    background: #000;
+}
+
+.p3{
+    color: rgb(70, 4, 184);
+    background: rgb(171, 207, 11);
+}

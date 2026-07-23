@@ -1,0 +1,14 @@
+.im2{
+    height: 250px;
+    width: 400px;
+
+    /* filter: brightness(80%); */
+    /* filter: blur(10px); */
+    /* filter: contrast(100%); */
+    filter: saturate(120%);
+    box-shadow: 10px  10px 10px;
+}
+.img1{
+    height: 400px;
+    filter: drop-shadow(10px 10px 5px grey);
+}

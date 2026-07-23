@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(179, 179, 224);
+  /* background-image: url(./images/track\ train.jpg);*/
+  background-image: url(./images/low.png);
+  background-repeat: no-repeat;
+  /* repear(default) repeat x repeat y */
+  background-position: bottom center;
+  background-size: cover;
+  /* auto / cover / contain */
+  background-attachment: fixed;
+  /* scroll(default) : both background image and content are scroll
+    fixed : background image is fixed but contains will scroll  */
+}
+.ssd {
+  color: rgb(10, 11, 12);
+  text-align: center;
+  margin: 0;
+  height: 70vh;
+  display: grid;
+  place-items: center;
+}
