@@ -1,0 +1,13 @@
+header{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    font-size: 200%;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
