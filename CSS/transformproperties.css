@@ -1,0 +1,16 @@
+.box {
+  margin: auto;
+  border: solid 1px black;
+  height: 200px;
+  width: 200px;
+
+  background-color: blue;
+/*   
+    transform: skew(50deg);
+    transform: rotate(60deg);
+    transform: scale(0.5); */
+
+    transform: rotateX(40deg);
+}
+
+

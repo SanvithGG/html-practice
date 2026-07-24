@@ -1,3 +1,7 @@
+h1{
+    text-align: center;
+}
+
 #ss23{
     width: 70%;
     margin: auto;
@@ -8,4 +12,32 @@
     border-radius: 10px;
 
     box-shadow: 10px 10px 5px gray;
+}
+#ss24{
+    width: 70%;
+    margin: 10vh auto;
+
+    border-top: solid;
+    border-color: blue;
+    border-width: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    border-left-style: solid;
+    border-left-color: brown;
+    border-left-width: 5px;
+    border-bottom-left-radius: 5px;
+
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-top-right-radius: 10px;
+    border-right-color: blueviolet;
+
+    border-bottom-style: dashed;
+    border-bottom-color: brown;
+    border-bottom-width: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+    box-shadow: 10px 10px 10px red;
 }
