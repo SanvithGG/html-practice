@@ -1,0 +1,145 @@
+h1 {
+  background-color: yellow;
+  text-align: center;
+
+  display: inline; 
+  /* it is used to convert block to inline level element */
+}
+
+b {
+  background-color: yellow;
+  text-align: center;
+  display: block; /*it is used to convert the inline level element to the block level element*/
+}
+
+button {
+  display: block;
+  margin: 5vh auto;
+  width: 40pc;
+  text-align: center;
+  background-color: beige;
+  /* in here if we want to center a button we can only do it with the help of the margin and the display block cause we can use tect aligh to the existing default container 
+  the cases where we can use to center the content and the container  */
+}
+
+a {
+  display: block;
+  color: rgb(12, 16, 238);
+  text-align: center;
+}
+
+#h33 {
+  display: block;
+  margin: 20px auto;
+  width: 400px;
+  text-align: center;
+  background-color: aqua;
+  border: solid 3px black;
+}
+
+.squre {
+  width: 200px;
+  height: 200px;
+
+  display: block;
+  margin: 5vh auto;
+
+  border: 2px solid black;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+
+  border: solid 2px black;
+}
+
+.clr1 {
+  background-color: brown;
+}
+
+.clr2 {
+  background-color: blue;
+}
+
+.clr3 {
+  background-color: green;
+}
+
+.cl1 {
+  display: inline;
+  margin: auto;
+}
+
+.cl2 {
+  display: inline;
+  margin: auto;
+}
+
+.container {
+  display: flex; /* display flex : is used to convert all child elements to the inline elements*/
+  justify-content: center;
+  background-color: aqua;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+
+  margin: 0 10px;
+  /* display: inline-block; */
+  border: solid 2px black;
+}
+
+.clr6 {
+  background-color: brown;
+}
+
+.clr5 {
+  background-color: blue;
+}
+
+.clr4 {
+  background-color: green;
+}
+
+.textbox {
+  border: solid 2px black;
+  height: 150px;
+  width: 150px;
+
+  background-color: beige;
+
+  margin: 20px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letterbox {
+  border: solid 2px black;
+
+  width: 400px;
+  height: 20px;
+
+  margin: 20px auto;
+
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+}
+
+.textbox2 {
+  border: solid 2px black;
+  height: 150px;
+  width: 150px;
+
+  background-color: beige;
+
+  margin: 20px auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
