@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button ,a{
+  display: block;
+  margin: 19px auto;
+      
+  width: 20%;
+  padding: 2vh;
+  border: solid 2px black;      
+
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: larger;
+  color: blue;
+  background: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+button:hover, a:hover{
+  background: blue;
+  color: aliceblue;
+}
+
+button:active,a:active{
+  transform: scale(.9);
+  background: aqua;
+  color: black;
+}
+
+a,p{
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.box{
+  border: solid black 2px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin: 30px auto;
+  transition: all 2s;
+}
+
+.box:hover{
+  border-radius: 100px;
+  transform: rotate(2turn);
+}
+
+.box:active{
+  transform: scale(.05);
+}
+
+.hh{
+  width: 30px;
+  background-color: rgb(63, 206, 2);
+}
+
+.image{
+   border: solid 2px black;
+   height: 400px;
+   width: 400px;
+   margin: auto;
+   background-color: gray;
+   box-shadow: 5px 5px;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+
+  filter: drop-shadow(2px 2px);
+  transition: all 0.2s;
+}
+
+.image img:hover{
+  transform: rotate(180deg);
+}
+
+.bg{
+  border: solid 3px black;
+  width: 400px;
+  height: 300px;
+  margin: 5vh auto;
+  background: url("https://img.magnific.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_test_b&w=740&q=80") no-repeat center/cover;
+  transition: all .2s;
+}
+
+.bg img{
+  width: 100%;
+  height: 100%;
+}
+
+.bg:hover{
+  background: url("https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_640.jpg") no-repeat center/cover;
+}
+
+.text p{
+  border: solid 2px black;
+  color: black;
+  height: 400px;
+  width: 600px;
+  overflow: auto;
+  margin: auto;
+}
+
+.text p:hover{
+  opacity: .6;
+}
+
+p{
+  text-align: justify;
+}
+
+p::first-line{
+  color: blue;
+  font-weight: bolder;
+}
+
+p::first-letter{
+  font-size: 50px;
+  font-style: italic;
+}
+
+.inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+input{
+  border: solid 3px black;
+  width: 300px;
+  height: 30px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+  background: white;
+}
+
+.inputs input:hover{
+  background: gray;
+}
+
+input::placeholder{
+  color: black;
+}

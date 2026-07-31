@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 10vh auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10vh auto;
+  border: solid 2px black;
+  width: 1000px;
+  height: 400px;
+  align-items: center;
+  background-image: linear-gradient(rgb(10, 251, 235), rgb(220, 129, 243));
+}
+
+.box {
+  border: solid 2px black;
+  width: 200px;
+  height: 200px;
+  /* to bottom (default) / to top / to left / to right / to bottom right / to bottom left / to top right / to top left */
+  transition: all 1s;
+}
+
+.s1 {
+  background-image: linear-gradient(to top, red, yellow, gold);
+}
+
+.s2 {
+  background-image: linear-gradient(aqua, skyblue);
+}
+
+.s3 {
+  transform: rotate(45deg);
+  background-image: linear-gradient(to bottom right, blue 50%, white 50%);
+  border: none;
+}
+
+.box:hover {
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition: all 1s;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rg1 {
+  background-image: radial-gradient(yellow, white, black);
+}
+.rg2 {
+  background-image: radial-gradient(circle at center, red, white, red);
+}
+.rg3 {
+  background-image: radial-gradient(
+    circle at bottom,
+    red 50%,
+    yellow 50%,
+    orange
+  );
+}
+
+.conic {
+  display: flex;
+  margin: 10vh auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.c1 {
+  background-image: conic-gradient(yellow, black, red, yellow);
+}
+
+.o1 {
+  background-image: linear-gradient(red, rgba(255, 0, 0, 0.249));
+}
+
+.whole {
+  border: solid 2px black;
+  width: 1000px;
+  height: 490px;
+  padding: 10px;
+  margin: auto;
+}
+
+.radial {
+  border: solid 3px black;
+  width: 1000px;
+  padding: 50px;
+  display: flex;
+  margin: 10vh auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rlg {
+  background-image: repeating-linear-gradient(yellow, black 50%);
+}
+.rrg {
+  background-image: repeating-radial-gradient(yellow, black 50%);
+}
+.rcg {
+  background-image: repeating-conic-gradient(yellow, black 50%);
+}
+
+.box:active {
+  transform: scale(0.5);
+}
+
+.rainbow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22vh auto;
+}
+
+.r1 {
+  border-radius: 200px 0;
+  background-image: linear-gradient(to bottom right, yellow 50%, red 50%);
+}
+.r2 {
+  border-radius: 200px 0;
+  background-image: linear-gradient(to bottom right, green 50%, blue 50%);
+  transform: rotate(90deg);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle{
+    border: solid 2px black;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+}

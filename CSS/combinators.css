@@ -1,0 +1,23 @@
+/* Descendant selector Combinator */
+div p{
+    background-color: aqua;
+}
+
+/* Child selector Combinator */
+div > p{
+    color: red;
+}
+/* Adjacent Sibling selector Combinator */
+div +p{
+    color: rgb(228, 228, 235);
+}
+/* General Sibling selector Combinator */
+div ~ p{
+    background-color: green;
+    text-align: center;
+}
+
+.container div {
+   color: red;
+}
+
