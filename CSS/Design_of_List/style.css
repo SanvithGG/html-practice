@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 5vh auto;
+}
+ul {
+  list-style-position: inside;
+  list-style-image: conic-gradient(red, yellow, black);
+}
+li:nth-child(odd) {
+  background-color: aqua;
+}
+
+table,
+th,
+td {
+  border: solid 2px black;
+  margin: 5vh auto;
+  width: 70vh;
+  height: 10vh;
+  border-collapse: collapse;
+}
+
+td {
+  font-weight: bold;
+  text-align: center;
+}
+tr :nth-child(even) {
+  background-color: yellow;
+}
+
+.formbox {
+  margin: auto;
+  padding: 2vh;
+  border: solid 2px black;
+  width: 40vh;
+  height: 20vh;
+  background:linear-gradient( to bottom left,aqua,navy);
+  box-shadow: 5px 5px navy;
+  border-radius: 20px;
+}
+
+.formbox input{
+  display: block;
+  padding: 10px;
+  width: 90%;
+  margin: 2vh auto;
+  background-color: rgb(247, 249, 250);
+  border: none;
+  border-bottom: solid 2px black;
+  box-shadow: 5px 5px;
+}
+
+.formbox input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.formbox button {
+  display: block;
+  padding: 3px;
+  width: 100px;
+  margin: 2vh auto;
+  border: solid 2px black;
+  border-radius: 30px;
+  padding: 1vh;
+}
