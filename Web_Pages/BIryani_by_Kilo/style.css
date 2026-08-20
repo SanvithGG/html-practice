@@ -1,0 +1,386 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==================== HEADER & NAV ==================== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo-title {
+  font-size: 18px;
+  color: #7a0c2e;
+}
+
+.location-box {
+  background-color: #f0f4ff;
+  color: #3860be;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.login-button {
+  background-color: #f5b400;
+  color: #000000;
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ==================== CATEGORY BAR ==================== */
+.category-bar {
+  background-color: #7a0c2e;
+  padding: 10px 30px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.category-bar a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7a0c2e;
+  color: #ffffff;
+  margin: 20px 30px;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-badge {
+  background-color: #f5b400;
+  color: #000000;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+
+.order-btn {
+  background-color: #f5b400;
+  color: #000000;
+  border: none;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 420px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ==================== COMMON SECTION STYLES ==================== */
+.section {
+  margin: 30px;
+}
+
+.section h2 {
+  font-size: 22px;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+/* ==================== OFFERS SECTION ==================== */
+.offers-container {
+  display: flex;
+  gap: 15px;
+}
+
+.offer-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.offer-icon {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.maroon-box {
+  background-color: #7a0c2e;
+  color: #ffffff;
+}
+
+.yellow-box {
+  background-color: #f5b400;
+  color: #222222;
+}
+
+.offer-text b {
+  font-size: 14px;
+  display: block;
+}
+
+.offer-text p {
+  font-size: 12px;
+}
+
+/* ==================== CATEGORIES SECTION ==================== */
+.categories-container {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+}
+
+.category-item {
+  text-align: center;
+  background-color: #fdfaf3;
+  border: 1px solid #e8e0d0;
+  border-radius: 10px;
+  padding: 12px;
+  min-width: 140px;
+}
+
+.category-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.category-item p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* ==================== FOOD CARDS SECTION ==================== */
+.cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.food-card {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.food-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.card-order-count {
+  font-size: 12px;
+  color: #888888;
+  margin-bottom: 12px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price s {
+  color: #999999;
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+.price b {
+  font-size: 16px;
+  color: #222222;
+}
+
+.add-btn {
+  background-color: #f5b400;
+  color: #000000;
+  border: none;
+  padding: 6px 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+  background-color: #7a0c2e;
+  color: #ffffff;
+  padding: 40px 30px 20px 30px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.footer-title {
+  color: #f5b400;
+  font-size: 18px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a,
+.footer-column p a {
+  font-size: 13px;
+  color: #e0e0e0;
+}
+
+.footer-column p {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.app-title {
+  margin-top: 15px;
+}
+
+.store-badge {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff !important;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.social-links a {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.top-link {
+  color: #f5b400 !important;
+  font-weight: bold;
+}

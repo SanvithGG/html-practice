@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  position: fixed;
+  height: 20vh;
+  width: 100%;
+  background-color: #42424242;
+  display: flex;
+}
+
+.header .logo {
+  height: 100%;
+  width: 20%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  transform: scale(0.7);
+}
+
+.header .links {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  /* background-color: blue; */
+}
+
+.header .links ul {
+  /* background-color: aquamarine; */
+  list-style: none;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header .links a {
+  text-decoration: none;
+}
+
+.container .bg-image {
+  height: 100vh;
+  background-image: url(./Images/burgerking.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-image .container1 {
+  height: 50%;
+  width: 70%;
+
+  /* background-color: rgb(5, 20, 20); */
+}
+.bg-image .container1 h1{
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.gpalay {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  /* background-color: blue; */
+}
+
+.gpalay .ios,
+.gpalay .play {
+  height: 50%;
+  width: 20%;
+  /* background-color: blue; */
+  background-repeat: no-repeat;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.gpalay .play {
+  transform: scale(1.2);
+  background-image: url(./Images/google-play-badge.svg);
+}
+.gpalay .ios {
+  
+  background-image: url(./Images/ios-store.svg);
+}
+
+h2{
+  padding: 200px;
+}

@@ -12,7 +12,7 @@ div +p{
     color: rgb(228, 228, 235);
 }
 /* General Sibling selector Combinator */
-div ~ p{
+div ~ p{    
     background-color: green;
     text-align: center;
 }
