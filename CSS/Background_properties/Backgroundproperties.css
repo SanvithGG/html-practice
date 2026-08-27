@@ -1,7 +1,7 @@
 body {
   background-color: rgb(179, 179, 224);
-  /* background-image: url(./images/track\ train.jpg);*/
-  background-image: url(./images/low.png);
+  /* background-image: url(../images/track\ train.jpg);*/
+  background-image: url(../images/low.png);
   background-repeat: no-repeat;
   /* repear(default) repeat x repeat y */
   background-position: bottom center;
