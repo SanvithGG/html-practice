@@ -202,29 +202,32 @@ a {
 /* ==================== CATEGORIES SECTION ==================== */
 .categories-container {
   display: flex;
-  gap: 18px;
-  overflow-x: auto;
+  gap: 15px;
 }
 
 .category-item {
+  flex: 1;
   text-align: center;
   background-color: #fdfaf3;
   border: 1px solid #e8e0d0;
   border-radius: 10px;
-  padding: 12px;
-  min-width: 140px;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .category-item img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 8px;
 }
 
 .category-item p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #333333;
 }
