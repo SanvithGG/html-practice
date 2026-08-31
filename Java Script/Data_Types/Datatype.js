@@ -1,33 +1,53 @@
+//#region 1. Primitive Data Types
 document.write("<h1>Data types</h1>");
 
+//#region 1.1 Number Datatype
 console.warn(`Number datatype`); //NOTE : 'number' is the datatype of any integer or decimal number including 'Infinity'
 let a = 10;
 console.log(a); //Number
 console.log(typeof a);
+//#endregion
 
+//#region 1.2 String Datatype
 console.warn(` String datatype`); //NOTE : 'string' is the sequence of characters
 let b = `Hello , i am here`;
 console.log(b); //String
 console.log(typeof b);
+//#endregion
 
+//#region 1.3 Boolean Datatype
 console.warn(` boolean datatype`); //NOTE : 'true' or 'false' are the only values of boolean datatype
 let c = true;
 console.log(c); //Boolean
 console.log(typeof c);
+//#endregion
 
+//#region 1.4 Undefined Datatype
 console.warn(`undefined datatype`); //NOTE : 'undefined' is the default value of any variable in the java script
 let d;
 console.log(d);
 console.log(typeof d);
 
+console.error(`undefined keyword`);
+let u3 = undefined;
+console.log(u3);
+console.log(typeof u3);
+//#endregion
+
+//#region 1.5 Null Datatype
 console.warn(`null datatype`); //NOTE : 'null' is the intentional absence of any value
 let e = null;
 console.log(e);
 console.log(typeof e);
+//#endregion
 
+//#endregion
+
+//#region 2. Inbuilt Type Conversion Methods (Typecasting)
 //!using the inbuilt Method
 console.error(`using inbuilt method`);
 
+//#region 2.1 Number() Conversion
 console.error(`Number inbuilt Method`);
 let x = Number(a);
 console.log(x);
@@ -42,7 +62,9 @@ console.warn(`passing boolean to number`);
 let r = Number(true); //true -> 1 and false -> 0
 console.log(r);
 console.log(typeof r);
+//#endregion
 
+//#region 2.2 String() Conversion
 console.error(`String inbuilt Method`);
 let y = String(b);
 console.log(y);
@@ -57,7 +79,9 @@ console.warn(`passing boolean to string `);
 let w = String(c); //converting boolean to string
 console.log(w);
 console.log(typeof w);
+//#endregion
 
+//#region 2.3 Boolean() Conversion
 console.error(`Boolean inbuilt Method`);
 let v = Boolean(true);
 console.log(v);
@@ -92,17 +116,20 @@ console.warn(`Passing the back tick the boolean`);
 let u2 = Boolean(` `);
 console.log(u2);
 console.log(typeof u2);
+//#endregion
 
-console.error(`undefined keyword`);
-let u3 = undefined;
-console.log(u3);
-console.log(typeof u3);
-
+//#region 2.4 Number() Conversion with Special Values
 console.log(Number(true));
 console.log(Number(false));
 console.log(Number(undefined));
 console.log(Number(null));
+//#endregion
 
+//#endregion
+
+//#region 3. Inbuilt Defaults & String Interpolation
+
+//#region 3.1 Default Values of Inbuilt Methods
 // todo default value of inbuilt method
 /*
 Number() -> 0
@@ -119,7 +146,9 @@ console.log(typeof String()); //return string
 
 console.log(Boolean()); //return false
 console.log(typeof Boolean()); //return boolean
+//#endregion
 
+//#region 3.2 String Interpolation & Concatenation
 //string interpretation
 
 let fname = "sanvith";
@@ -128,3 +157,6 @@ let age = 21;
 
 console.log("name" + fname);
 console.log(`first name %(fname) age %(age)`);
+//#endregion
+
+//#endregion

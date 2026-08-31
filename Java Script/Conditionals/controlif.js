@@ -1,10 +1,15 @@
+//#region 1. If & If-Else Decision Making
+
+//#region 1.1 Simple If Statement
 let num = 10;
 
 console.warn("if statement");
 if (num > 0) {
   console.log("its the positive mumber");
 }
+//#endregion
 
+//#region 1.2 If-Else Statement
 console.warn("if else statement");
 let num1 = -10;
 if (num1 > 0) {
@@ -12,9 +17,9 @@ if (num1 > 0) {
 } else {
   console.log("negative nnumber");
 }
+//#endregion
 
-console.warn("if else if statement");
-
+//#region 1.3 If-Else Statement (Even or Odd)
 console.warn("even or odd");
 let num3 = 10;
 if (num3 % 2 == 0) {
@@ -22,7 +27,9 @@ if (num3 % 2 == 0) {
 } else {
   console.log("negative nnumber");
 }
+//#endregion
 
+//#region 1.4 If-Else-If Ladder (Positive, Negative, or Neutral)
 console.warn("if else if statement");
 
 let num2 = -0;
@@ -33,7 +40,13 @@ if (num2 > 0) {
 } else {
   console.log("neutral");
 }
+//#endregion
 
+//#endregion
+
+//#region 2. Nested If Statements & Real-World Examples
+
+//#region 2.1 Nested If: Type Validation & Even/Odd Check
 console.warn(`Nested if Statements`);
 let num11 = 101;
 
@@ -48,7 +61,9 @@ if (typeof num == "number") {
 } else {
   console.log(`Its not a number`);
 }
+//#endregion
 
+//#region 2.2 Nested If: User Login Authentication
 //real word example
 
 console.warn(`Nested if Statements (real word example)`);
@@ -66,7 +81,9 @@ if (email == "sam@123") {
 } else {
   console.log(`invalid email address`);
 }
+//#endregion
 
+//#region 2.3 Logical AND Condition (Alternative Authentication)
 // real word example path 2
 
 console.warn(`Nested if Statements (real word example)`);
@@ -79,7 +96,13 @@ if (email1 == "sam@123" && pass == "user123") {
 } else {
   console.log(`invalid email address or password`);
 }
+//#endregion
 
+//#endregion
+
+//#region 3. Switch Statements & Examples
+
+//#region 3.1 Switch Statement: Traffic Signal Colors
 //Switch
 
 console.warn(`Switch Statement`);
@@ -98,7 +121,9 @@ switch (color) {
   default:
     console.log(`RIP `);
 }
+//#endregion
 
+//#region 3.2 Switch Statement with Boolean Conditions: Age Categories
 // real example 1
 
 console.warn(`Finding the person jobs based on the age `);
@@ -106,7 +131,7 @@ console.warn(`Finding the person jobs based on the age `);
 let age2 = 10;
 
 switch (true) {
-  case (age2 <=5):
+  case (age2 <= 5):
     console.log(`The person is the kid`);
     break;
   case (age2 > 5 && age2 <= 10):
@@ -118,3 +143,6 @@ switch (true) {
   default:
     console.log(`invalid age `);
 }
+//#endregion
+
+//#endregion
