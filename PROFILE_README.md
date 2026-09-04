@@ -90,12 +90,12 @@
 </div>
 
 <div align="center" style="margin-top: 15px;">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SanvithGG&theme=tokyonight" alt="GitHub Profile Details & Timeline" width="100%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SanvithGG&theme=tokyonight" alt="Top Languages by Repo" height="195" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SanvithGG&theme=tokyonight" alt="Top Languages by Commit" height="195" />
 </div>
 
 <div align="center" style="margin-top: 15px;">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SanvithGG&theme=tokyonight" alt="Repos Per Language" height="190" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SanvithGG&theme=tokyonight" alt="Most Commit Language" height="190" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SanvithGG&theme=tokyonight" alt="GitHub Analytics & Contribution Timeline" width="100%" />
 </div>
 
 ---
