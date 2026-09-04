@@ -542,6 +542,16 @@ setTimeout(()=>{
   console.log(`Hello`);
 },2000)
 
+console.warn(`Nested function`);
+function outer() {
+  function inner() {
+    console.log(`hello`);
+  }
+  inner();
+}
+  outer();
+
+
 // in anbove the example the output will be printed in the 2 sec 
 // Here the setTimeout
 
