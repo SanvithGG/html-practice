@@ -90,8 +90,12 @@
 </div>
 
 <div align="center" style="margin-top: 15px;">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=SanvithGG&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Sanvith's GitHub Stats" height="175" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=SanvithGG&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="175" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SanvithGG&theme=tokyonight" alt="GitHub Profile Details & Timeline" width="100%" />
+</div>
+
+<div align="center" style="margin-top: 15px;">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SanvithGG&theme=tokyonight" alt="Repos Per Language" height="190" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SanvithGG&theme=tokyonight" alt="Most Commit Language" height="190" />
 </div>
 
 ---
