@@ -1,6 +1,8 @@
 <div align="center">
 
-  # Hi there, I'm Sanvith Gowda 👋
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=Sanvith%20Gowda&fontSize=50&fontAlignY=38&animation=twinkling&desc=Full-Stack%20Web%20Developer%20%E2%80%A2%20Crafting%20Modern%20Web%20Experiences&descAlignY=58&descAlign=50" width="100%" alt="Header Banner" />
+
+  <br />
 
   <a href="https://github.com/SanvithGG">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6366F1&center=true&vCenter=true&width=520&lines=Full-Stack+Web+Developer;Building+Modern+Web+Applications;Crafting+Pixel-Perfect+UI+Clones;Java+%7C+JavaScript+%7C+React+%7C+Go" alt="Typing SVG" />
@@ -79,15 +81,17 @@
 
 ---
 
-### 📊 GitHub Activity & Statistics
+### 📊 GitHub Activity & Streak Statistics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SanvithGG&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Sanvith's GitHub Stats" height="175" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SanvithGG&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="175" />
+  <a href="https://github.com/SanvithGG">
+    <img src="https://streak-stats.demolab.com/?user=SanvithGG&theme=tokyonight&hide_border=true&border_radius=10&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak Stats" />
+  </a>
 </div>
 
 <div align="center" style="margin-top: 15px;">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SanvithGG&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=SanvithGG&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Sanvith's GitHub Stats" height="175" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=SanvithGG&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="175" />
 </div>
 
 ---
@@ -108,5 +112,5 @@
 <br />
 
 <div align="center">
-  <sub>Designed & built with care by <a href="https://github.com/SanvithGG">Sanvith Gowda</a></sub>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer" width="100%" alt="Footer Wave" />
 </div>
