@@ -1,6 +1,14 @@
 # 🌐 Web Technologies & Full-Stack Practice
 
-A structured repository containing Web Development practice files, topic-wise exercises, CSS styling demos, JavaScript programming concepts, and complete web page replicas.
+<p align="left">
+  <img src="https://img.shields.io/badge/Author-Sanvith%20Gowda-6366f1?style=flat-square&logo=github" alt="Author" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Responsive-Design-success?style=flat-square" alt="Responsive" />
+</p>
+
+A structured repository containing Web Development practice files, topic-wise exercises, CSS styling demos, JavaScript programming concepts, and complete web page replicas (Blinkit, Netflix, Knightbite, Biryani By Kilo).
 
 ---
 
