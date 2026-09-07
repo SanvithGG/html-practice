@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 90" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#040714"/>
+      <stop offset="40%" stop-color="#080e2b"/>
+      <stop offset="70%" stop-color="#14092b"/>
+      <stop offset="100%" stop-color="#040714"/>
+    </linearGradient>
+
+    <linearGradient id="footerLaser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00f0ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#ec4899" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="footerBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <filter id="laserBeamGlow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes laserSweep {
+      0% { transform: translateX(-600px); }
+      100% { transform: translateX(1100px); }
+    }
+    @keyframes pulseFooterNode {
+      0%, 100% { r: 3px; opacity: 0.5; }
+      50% { r: 5.5px; opacity: 1; }
+    }
+    .laser-wave {
+      animation: laserSweep 4.5s ease-in-out infinite;
+    }
+    .f-node-1 { animation: pulseFooterNode 2.6s ease-in-out infinite; }
+    .f-node-2 { animation: pulseFooterNode 3.1s ease-in-out infinite 0.8s; }
+    .f-node-3 { animation: pulseFooterNode 2.9s ease-in-out infinite 1.5s; }
+  </style>
+
+  <!-- Background Base -->
+  <rect x="0" y="0" width="1024" height="90" rx="8" fill="url(#footerBg)" />
+
+  <!-- Constellation Nodes on Footer -->
+  <circle class="f-node-1" cx="150" cy="45" r="3.5" fill="#00d2ff" />
+  <circle class="f-node-2" cx="320" cy="35" r="3" fill="#c084fc" />
+  <circle class="f-node-3" cx="512" cy="55" r="4" fill="#00f0ff" />
+  <circle class="f-node-1" cx="720" cy="38" r="3" fill="#f472b6" />
+  <circle class="f-node-2" cx="880" cy="48" r="3.5" fill="#38bdf8" />
+
+  <!-- Constellation Lines -->
+  <line x1="150" y1="45" x2="320" y2="35" stroke="#38bdf8" stroke-width="0.7" stroke-opacity="0.25"/>
+  <line x1="320" y1="35" x2="512" y2="55" stroke="#a855f7" stroke-width="0.7" stroke-opacity="0.25"/>
+  <line x1="512" y1="55" x2="720" y2="38" stroke="#e879f9" stroke-width="0.7" stroke-opacity="0.25"/>
+  <line x1="720" y1="38" x2="880" y2="48" stroke="#38bdf8" stroke-width="0.7" stroke-opacity="0.25"/>
+
+  <!-- Glowing Laser Line across the top/middle -->
+  <line x1="0" y1="45" x2="1024" y2="45" stroke="#00d2ff" stroke-width="0.8" stroke-opacity="0.15" />
+  
+  <g class="laser-wave" filter="url(#laserBeamGlow)">
+    <line x1="0" y1="45" x2="260" y2="45" stroke="url(#footerLaser)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="260" cy="45" r="3.5" fill="#ffffff" />
+  </g>
+
+  <!-- Center Text -->
+  <text x="512" y="49" fill="#94a3b8" font-family="'Segoe UI', system-ui, -apple-system, Roboto, monospace" font-size="12" font-weight="600" letter-spacing="2" text-anchor="middle">✦ ENGINEERED WITH PASSION • POWERED BY MODERN WEB TECH ✦</text>
+
+  <!-- Outer Border -->
+  <rect x="2" y="2" width="1020" height="86" rx="6" fill="none" stroke="url(#footerBorderGrad)" stroke-width="1.2" stroke-opacity="0.4" />
+</svg>

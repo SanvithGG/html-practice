@@ -1,18 +1,18 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=Sanvith%20Gowda&fontSize=50&fontAlignY=38&animation=twinkling&desc=Full-Stack%20Web%20Developer%20%E2%80%A2%20Crafting%20Modern%20Web%20Experiences&descAlignY=58&descAlign=50" width="100%" alt="Header Banner" />
+  <img src="https://raw.githubusercontent.com/SanvithGG/html-practice/main/assets/header-banner.svg" width="100%" alt="Sanvith Gowda - Header Banner" />
 
   <br />
 
   <a href="https://github.com/SanvithGG">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6366F1&center=true&vCenter=true&width=520&lines=Full-Stack+Web+Developer;Building+Modern+Web+Applications;Crafting+Pixel-Perfect+UI+Clones;Java+%7C+JavaScript+%7C+React+%7C+Go" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00D2FF&center=true&vCenter=true&width=520&lines=Full-Stack+Web+Developer;Building+Modern+Web+Applications;Crafting+Pixel-Perfect+UI+Clones;Java+%7C+JavaScript+%7C+React+%7C+Go" alt="Typing SVG" />
   </a>
 
   <p align="center">
     <a href="https://github.com/SanvithGG">
-      <img src="https://komarev.com/ghpvc/?username=SanvithGG&label=Profile%20Views&color=6366f1&style=flat-square" alt="Profile Views" />
+      <img src="https://komarev.com/ghpvc/?username=SanvithGG&label=Profile%20Views&color=00d2ff&style=flat-square" alt="Profile Views" />
     </a>
-    <img src="https://img.shields.io/badge/Status-Building%20%26%20Learning-success?style=flat-square&color=22c55e" alt="Status" />
+    <img src="https://img.shields.io/badge/Status-Building%20%26%20Shipping-00d2ff?style=flat-square&logo=visual-studio-code&logoColor=white" alt="Status" />
   </p>
 
 </div>
@@ -116,5 +116,5 @@
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer" width="100%" alt="Footer Wave" />
+  <img src="https://raw.githubusercontent.com/SanvithGG/html-practice/main/assets/footer-banner.svg" width="100%" alt="Footer Banner" />
 </div>

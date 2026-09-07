@@ -6,3 +6,5 @@ Test/
 # Dependencies
 node_modules/
 
+# Scratch & Temporary
+scratch/
