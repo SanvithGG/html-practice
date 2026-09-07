@@ -533,9 +533,44 @@
 // let res = arr.sort((a, b) => a-b);
 // console.log(res);
 
-let arr = [2,3,4,3,5,6,2,3,4,5]
-let res = arr.findIndex((ele)=>{
-    return ele>4
-})
-console.log(res);
-console.log(arr[res]);
+// let arr = [2,3,4,3,5,6,2,3,4,5]
+// let res = arr.findIndex((ele)=>{
+//     return ele>4
+// })
+// console.log(res);
+// console.log(arr[res]);
+
+// let arr = [2,3,4,3,5,6,2,3,4,5]
+// let res = arr.find((ele)=>{
+//     return ele>5
+// })
+// console.log(res);
+// console.log(arr[res]);
+
+// Array Programs
+// find largest number in this array
+// let arr = [46, 575, 65, 4, 89, 877, 20, 35, 400, 57];
+
+// console.log(arr.sort((a, b) => b - a)[0]);
+
+// let res = arr.reduce((a, b) => {
+//   return a > b ? a : b;
+// });
+
+// console.log(res);
+
+// reverse a string
+
+// let str = "hello"
+// console.log(str);
+// console.log(str.split('').reverse().join(''));
+
+let str = "MADAM"
+let pal = str.split('').reverse().join('');
+// if(str ===pal){
+//     console.log("palindrome");
+// }
+// else{
+//     console.log("not palindrome");
+// }
+(str === pal)? console.log("palindrome") :console.log("not palindrome");
