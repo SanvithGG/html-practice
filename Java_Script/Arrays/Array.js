@@ -177,34 +177,37 @@
 // let arr = [100,200,300,304,400,900]
 // let l =arr.splice(1 , 2 ,"hii","jii")
 // console.log(arr);
-// console.log(l); 
-
+// console.log(l);
 
 // 5.  `slice()`
 // let arr = [100,200,300,304,400,900]
 // let l =arr.slice(2,5)
 // console.log(arr);
-// console.log(l); 
+// console.log(l);
 
 // 6.  `indexOf()`
 // let arr = [100,200,100,304,100,900]
-// console.log(arr.indexOf(100)); 
-// console.log(arr.lastIndexOf(100)); 
+// console.log(arr.indexOf(100));
+// console.log(arr.lastIndexOf(100));
 
 // 7.  `lastIndexOf()`
 // let arr = [100,200,100,304,100,900]
-// console.log(arr.indexOf(100)); 
-// console.log(arr.lastIndexOf(100)); 
+// console.log(arr.indexOf(100));
+// console.log(arr.lastIndexOf(100));
 
 // 8.  `includes()`
 // let arr = [100,200,100,304,100,900]
-// console.log(arr.includes(100)); 
-// console.log(arr.includes(200)); 
+// console.log(arr.includes(100));
+// console.log(arr.includes(200));
 
 // 9. `concat()`
 // let arr = [100,200,100,304,100,900]
-// console.log(arr.concat("hi")); 
-// console.log(arr.concat("hello")); 
+// console.log(arr.concat("hi"));
+// console.log(arr.concat("hello"));
+
+// let arr = [100,200,100,304,100,900]
+// let arr1 = ["Hi","hello"]
+// console.log(arr.concat(arr1));
 
 // 10. `reverse()`
 // let arr = [100,200,100,304,100,900,"hi"]
@@ -218,19 +221,19 @@
 // let rev = arr.join("-");
 // console.log(rev);
 
-// 12. `flat()`
-let arr = [100,200,[100,304],100,900,"hi"]
-console.log(arr);
-let rev = arr.flat();
-console.log(rev);
+// 12. `flat()` : it is used to cpnvert the multi dimensional array to the single array
+// let arr = [100,200,[100,304],100,900,"hi"]
+// console.log(arr);
+// let rev = arr.flat();
+// console.log(rev);
 
+// created using with the higher ordder function
 // 13. `forEach()`
 // 14. `map()`
 // 15. `filter()`
 // 16. `reduce()`
 // 17. `sort()`
 // 18. `find()`
-
 
 // todo : Example 1 :
 
@@ -304,3 +307,163 @@ console.log(rev);
 // let result = cart.join("->")
 
 // console.log(rev);
+
+// console.log("using the for loop");
+// let arr = [10,20,40,50,30,50];
+// for(i=0;i<arr.length;i++){
+//     console.log("Index is "+i);
+//     console.log("Elements are"+arr[i]);
+// }
+
+// using for ,fot in , and for off
+// for in
+// let arr = [10,20,40,50,30,50];
+// for(let index in arr){
+// console.log(arr[index]);
+// }
+
+// for off
+// let arr = [1,2,3,4,5];
+// for(let ele of arr){
+//     if(ele%2==0)
+//       console.log(ele);
+// }
+
+// let arr = ["hello","Hii"];
+// for(let ele of arr){
+//   console.log(ele);
+// }
+// for Each : its a higher order function
+// let arr = [10, 20, 40, 50, 30, 50];
+
+// for (let i = 0; i < arr.length; i++) {
+// console.log(arr);
+//   console.log(i);
+//   console.log(arr[i]); //gives elements
+// }
+
+// console.log(arr);
+// arr.forEach((ele) => {
+//   console.log(ele);
+// }); //gives elements
+
+// console.log(arr);
+// arr.forEach((ele, index) => {
+//   console.log(ele);
+//   console.log(index);
+// }); //gives elements
+
+// console.log(arr);
+// arr.forEach((ele,index,arr) => {
+//   console.log(ele);
+//   console.log(index);
+//   console.log(arr);
+// }); //gives elements
+
+// let arr = [10, 20, 40, 50, 30, 50];
+
+// let newArray = [];
+
+// For Each
+// arr.forEach((ele)=>{
+//     newArray[newArray.length] = ele + 2;
+// })
+// console.log(newArray);
+
+// For of
+// for ( ele of arr ) {
+//     newArray[newArray.length] = ele + 2;
+// }
+// console.log(newArray);
+
+// for
+
+// for(let i =0;i<arr.length; i++){
+//     newArray[newArray.length] = arr[i] + 2;
+// }
+// console.log(newArray);
+
+// todo : map
+// let arr = [10, 20, 40, 50, 30, 50];
+
+// let newArray = [];
+
+// let res = arr.map((ele)=>{
+//        return(ele+2)        // insted of this => newArray[newArray.length] = ele + 2; | we use the return here which is not possuble in the others like gor each of anf in
+// })
+// console.log(res);
+
+// let newArray = [];
+
+// console.log(arr.map( ele => ele+2));
+
+// ! TASK :
+
+// let fruit = ["Appke", "Mango", "Bannana", "Orange", "Grapes"];
+
+// let newArray = [];
+
+// for (let i = 0; i < fruit.length; i++) {
+//   newArray[newArray.length] = fruit[i].toUpperCase();
+// }
+
+// console.log(newArray);
+
+// for of
+
+// for( ele of fruit){
+//    newArray[newArray.length] = ele.toUpperCase();
+// }
+// console.log(newArray);
+
+// for in
+
+// for( index in fruit){
+//    newArray[newArray.length] = fruit[index].toUpperCase();
+// }
+// console.log(newArray);
+
+// fpr each
+//  fruit.forEach((ele)=>{
+//     newArray[newArray.length] = ele.toUpperCase();
+//  })
+// console.log(newArray);
+
+// Map
+
+// let res = fruit.map((ele)=>{
+//     return ele.toUpperCase();
+// })
+
+// console.log(fruit.map((ele) => ele.toUpperCase()));
+/* for => normal for loop 
+   for in => used for the index val of arr no function needed
+   fro of => used for the element of the arr no function is needed
+   for each=> used for all cases like index ele and also arr 
+   map => its a higher order fun and also in this we can use the return statement and the function is necessary (arrow functionh)*/
+
+
+// let arr =[1,2,3,4,5,7,]
+
+// let res = arr.filter((ele)=>{
+//     return ele%2==1
+// })
+// console.log(res);
+
+
+// Example p : 2
+let fruit = ["Appke", "Mango", "Bannana", "Orange", "Grapes"];
+
+let res = fruit.map((ele)=>{
+    if(ele.endsWith('e'))
+        return ele
+    ele
+    return null
+})
+console.log(res);
+
+// Filter :
+// let res = fruit.filter((ele)=>{
+//     return ele.endsWith('e')
+// })
+// console.log(res);
