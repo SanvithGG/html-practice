@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/SanvithGG/html-practice/main/assets/header-banner.svg" width="100%" alt="Sanvith Gowda - Header Banner" />
+  <img src="https://raw.githubusercontent.com/SanvithGG/SanvithGG/main/assets/sanvithgg-banner.svg" width="100%" alt="SanvithGG - Full-Stack Developer Banner" />
 
   <br />
 
