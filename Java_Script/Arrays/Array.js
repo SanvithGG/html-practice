@@ -442,14 +442,12 @@
    for each=> used for all cases like index ele and also arr 
    map => its a higher order fun and also in this we can use the return statement and the function is necessary (arrow functionh)*/
 
-
 // let arr =[1,2,3,4,5,7,]
 
 // let res = arr.filter((ele)=>{
 //     return ele%2==1
 // })
 // console.log(res);
-
 
 // Example p : 2
 // let fruit = ["Appke", "Mango", "Bannana", "Orange", "Grapes"];
@@ -468,7 +466,7 @@
 // })
 // console.log(res);
 
-// reduce function : reducing the value of the arra to the single level 
+// reduce function : reducing the value of the arra to the single level
 
 // let arr = [2,3,4]
 
@@ -483,5 +481,54 @@
 // })
 // console.log(res);
 
+// let arr = [2,3,4]
 
+// arr.reduce((prev , curr)=>{
+//     let sum = prev * curr;
+//     console.log(`${prev} * ${curr} = ${sum}`);
+//     return sum;
+// })
 
+// todo : reduce() : it is used to reduce all elements od an array into a single value while doing some operations and return the single value .
+/*
+    Syntax :
+      arrat.reduce((accumulatot,current value , index , arr)=>{ return result },initial value)
+*/
+// -Accumulator - A variable that stores and keeps updating the resut while processing elements one by one
+// -current value - current attay elements
+// -index - index of the current array elements
+// -array - Original Array
+// -initial values = Initial value of accumulators (previous values)
+
+// Sort method : it is uesd to sort the array elements in the asc and the desc order and returns sorted attay
+
+// let arr = [2,3,4,3,5,6,2,3,4,5]  we can use this if there are only sigle numbers if we want the correct ans for the multiple numbers then we have to use the higher order function
+
+// let res = arr.sort();
+// console.log(res);
+
+// Ascending order
+// let arr = [23,454,76,8,9,45,6456,8,768,6453]
+
+// let res = arr.sort((a,b)=>{
+//     return a-b;
+// })
+// console.log(res);
+
+// Descending order
+// let arr = [23,454,76,8,9,45,6456,8,768,6453]
+
+// let res = arr.sort((a,b)=>{
+//     return b-a;
+// })
+// console.log(res);
+
+// let arr = [23, 454, 76, 8, 9, 45, 6456, 8, 768, 6453];
+
+// let res = arr.sort((a, b) => b - a);
+// console.log(res);
+
+// let arr = [23, 454, 76, 8, 9, 45, 6456, 8, 768, 6453];
+
+// let res = arr.sort((a, b) => a-b);
+// console.log(res);

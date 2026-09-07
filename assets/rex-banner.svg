@@ -1,0 +1,335 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="25%" stop-color="#060b24"/>
+      <stop offset="50%" stop-color="#0a0f30"/>
+      <stop offset="75%" stop-color="#0e0a2d"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <!-- Deep Ambient Glow Spheres -->
+    <radialGradient id="glowBlue" cx="25%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#0369a1" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowPurple" cx="75%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#6d28d9" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="centerCoreGlow" cx="50%" cy="48%" r="35%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="40%" stop-color="#a855f7" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="rexTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#e0f2fe"/>
+      <stop offset="65%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <!-- Tagline Gradient -->
+    <linearGradient id="taglineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Horizontal Laser Line Gradient -->
+    <linearGradient id="horizonLaser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00f0ff" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#c084fc" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#ec4899" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Spark Streak Gradient -->
+    <linearGradient id="sparkGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.08"/>
+      <circle cx="40" cy="40" r="0.8" fill="#38bdf8" fill-opacity="0.18"/>
+    </pattern>
+
+    <!-- Sleek Neon Glow Filters -->
+    <filter id="neonPulsingGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="laserGlow" x="-50%" y="-200%" width="200%" height="500%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="particleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* 6s Perfect Seamless Animation Loops */
+    @keyframes titlePulse {
+      0%, 100% {
+        filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.35)) drop-shadow(0 0 20px rgba(192, 132, 252, 0.25));
+        opacity: 0.96;
+      }
+      50% {
+        filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.7)) drop-shadow(0 0 36px rgba(244, 114, 182, 0.45));
+        opacity: 1;
+      }
+    }
+
+    @keyframes laserSweep {
+      0% {
+        transform: translateX(-500px);
+        opacity: 0;
+      }
+      15% {
+        opacity: 0.9;
+      }
+      85% {
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateX(1300px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes gridShift {
+      0% { transform: translateY(0px); opacity: 0.6; }
+      50% { transform: translateY(8px); opacity: 0.9; }
+      100% { transform: translateY(0px); opacity: 0.6; }
+    }
+
+    @keyframes floatParticleA {
+      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-12px) translateX(6px); opacity: 0.85; }
+    }
+
+    @keyframes floatParticleB {
+      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.25; }
+      50% { transform: translateY(10px) translateX(-5px); opacity: 0.75; }
+    }
+
+    @keyframes codeFadeA {
+      0%, 100% { opacity: 0.15; transform: translateY(0px); }
+      50% { opacity: 0.55; transform: translateY(-4px); }
+    }
+
+    @keyframes codeFadeB {
+      0%, 100% { opacity: 0.45; transform: translateY(-3px); }
+      50% { opacity: 0.12; transform: translateY(2px); }
+    }
+
+    @keyframes codeSymbolFloat {
+      0%, 100% { transform: translateY(0px) scale(1); opacity: 0.25; }
+      50% { transform: translateY(-8px) scale(1.08); opacity: 0.65; }
+    }
+
+    @keyframes sparkFlash {
+      0% { transform: translate(-40px, 40px); opacity: 0; }
+      20% { opacity: 0; }
+      30% { opacity: 1; }
+      45% { transform: translate(120px, -80px); opacity: 0; }
+      100% { transform: translate(120px, -80px); opacity: 0; }
+    }
+
+    @keyframes dotPulse {
+      0%, 100% { r: 1.5px; opacity: 0.4; }
+      50% { r: 3px; opacity: 1; }
+    }
+
+    /* Class applications */
+    .rex-main-title {
+      font-family: 'Space Grotesk', 'Outfit', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+      font-weight: 900;
+      letter-spacing: 14px;
+      animation: titlePulse 6s ease-in-out infinite;
+    }
+
+    .rex-tagline {
+      font-family: 'Space Grotesk', 'Outfit', 'Segoe UI', system-ui, -apple-system, Roboto, monospace;
+      font-weight: 600;
+      letter-spacing: 7px;
+    }
+
+    .laser-traveller {
+      animation: laserSweep 6s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+    }
+
+    .grid-motion {
+      animation: gridShift 12s ease-in-out infinite;
+    }
+
+    .particle-a { animation: floatParticleA 6s ease-in-out infinite; }
+    .particle-b { animation: floatParticleB 7.5s ease-in-out infinite 1s; }
+    
+    .code-fade-1 { animation: codeFadeA 6s ease-in-out infinite; }
+    .code-fade-2 { animation: codeFadeB 6s ease-in-out infinite 1.5s; }
+    .code-sym-float { animation: codeSymbolFloat 5.5s ease-in-out infinite; }
+
+    .spark-streak-1 {
+      animation: sparkFlash 6s ease-in-out infinite;
+    }
+    .spark-streak-2 {
+      animation: sparkFlash 6s ease-in-out infinite 3s;
+    }
+
+    .node-pulse-cyan {
+      animation: dotPulse 3s ease-in-out infinite;
+    }
+    .node-pulse-purple {
+      animation: dotPulse 3.5s ease-in-out infinite 1.2s;
+    }
+  </style>
+
+  <!-- 1. Deep Space Base Background -->
+  <rect width="1200" height="360" fill="url(#bgGrad)"/>
+
+  <!-- 2. Subtle Cyber Grid -->
+  <g class="grid-motion">
+    <rect width="1200" height="360" fill="url(#cyberGrid)"/>
+  </g>
+
+  <!-- 3. Ambient Glowing Nebulas / Lighting Spheres -->
+  <rect width="1200" height="360" fill="url(#glowBlue)"/>
+  <rect width="1200" height="360" fill="url(#glowPurple)"/>
+  <circle cx="600" cy="175" r="300" fill="url(#centerCoreGlow)"/>
+
+  <!-- 4. Subtle Background Lines of Code (Left Flank) -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace" font-size="11" fill="#38bdf8" letter-spacing="1">
+    <text class="code-fade-1" x="55" y="80" fill-opacity="0.35">&lt;dev&gt; mode: active &lt;/dev&gt;</text>
+    <text class="code-fade-2" x="70" y="115" fill-opacity="0.25">const stack = ['TS', 'React', 'Java', 'Go'];</text>
+    <text class="code-fade-1" x="50" y="245" fill-opacity="0.25">git commit -m &quot;feat: innovate&quot;</text>
+    <text class="code-fade-2" x="75" y="280" fill-opacity="0.3">await Promise.all([learn, build, ship]);</text>
+  </g>
+
+  <!-- 5. Subtle Background Lines of Code (Right Flank) -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace" font-size="11" fill="#c084fc" letter-spacing="1">
+    <text class="code-fade-2" x="920" y="85" fill-opacity="0.3">public class Architect { ... }</text>
+    <text class="code-fade-1" x="965" y="120" fill-opacity="0.25">sys.status = &quot;OPTIMAL&quot;;</text>
+    <text class="code-fade-2" x="940" y="240" fill-opacity="0.25">while (coding) { innovate(); }</text>
+    <text class="code-fade-1" x="980" y="275" fill-opacity="0.32">&lt;deployment.ready /&gt;</text>
+  </g>
+
+  <!-- 6. Floating Minimalist Programming References & Symbols -->
+  <g font-family="'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace" font-weight="700">
+    <!-- </> -->
+    <text class="code-sym-float" x="180" y="160" font-size="22" fill="#38bdf8" fill-opacity="0.45" filter="url(#particleGlow)">&lt;/&gt;</text>
+    <!-- {} -->
+    <text class="code-sym-float" x="990" y="175" font-size="24" fill="#a855f7" fill-opacity="0.4" filter="url(#particleGlow)">{}</text>
+    <!-- () -->
+    <text class="code-fade-1" x="310" y="95" font-size="18" fill="#64748b" fill-opacity="0.4">()</text>
+    <!-- ; -->
+    <text class="code-fade-2" x="870" y="100" font-size="26" fill="#38bdf8" fill-opacity="0.5">;</text>
+    <!-- JS Badge -->
+    <g class="particle-a" transform="translate(240, 270)">
+      <rect width="32" height="18" rx="4" fill="#0f172a" fill-opacity="0.6" stroke="#eab308" stroke-width="0.8" stroke-opacity="0.4"/>
+      <text x="16" y="13" font-size="9" fill="#facc15" text-anchor="middle" letter-spacing="0.5">JS</text>
+    </g>
+    <!-- Java Badge -->
+    <g class="particle-b" transform="translate(900, 265)">
+      <rect width="44" height="18" rx="4" fill="#0f172a" fill-opacity="0.6" stroke="#f97316" stroke-width="0.8" stroke-opacity="0.4"/>
+      <text x="22" y="13" font-size="9" fill="#fb923c" text-anchor="middle" letter-spacing="0.5">Java</text>
+    </g>
+    <!-- Git Badge -->
+    <g class="particle-a" transform="translate(1030, 215)">
+      <rect width="36" height="18" rx="4" fill="#0f172a" fill-opacity="0.6" stroke="#ef4444" stroke-width="0.8" stroke-opacity="0.4"/>
+      <text x="18" y="13" font-size="9" fill="#f87171" text-anchor="middle" letter-spacing="0.5">Git</text>
+    </g>
+  </g>
+
+  <!-- 7. Ambient Micro Particles & Constellation Nodes -->
+  <circle class="particle-a" cx="140" cy="190" r="1.8" fill="#38bdf8" filter="url(#particleGlow)"/>
+  <circle class="particle-b" cx="220" cy="65" r="1.5" fill="#ffffff"/>
+  <circle class="particle-a" cx="340" cy="285" r="2" fill="#c084fc" filter="url(#particleGlow)"/>
+  <circle class="particle-b" cx="440" cy="70" r="1.2" fill="#38bdf8"/>
+  <circle class="particle-a" cx="780" cy="60" r="1.5" fill="#38bdf8"/>
+  <circle class="particle-b" cx="860" cy="290" r="2" fill="#e879f9" filter="url(#particleGlow)"/>
+  <circle class="particle-a" cx="1060" cy="110" r="1.8" fill="#38bdf8"/>
+  <circle class="particle-b" cx="1120" cy="230" r="1.5" fill="#c084fc"/>
+
+  <!-- Subtle Constellation Connecting Lines -->
+  <line x1="140" y1="190" x2="220" y2="65" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.15"/>
+  <line x1="990" y1="175" x2="1060" y2="110" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.15"/>
+
+  <!-- 8. Occasional Fast Light Sparks / Streaks -->
+  <g class="spark-streak-1" transform="translate(280, 200)">
+    <line x1="0" y1="0" x2="35" y2="-22" stroke="url(#sparkGrad)" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <g class="spark-streak-2" transform="translate(850, 140)">
+    <line x1="0" y1="0" x2="40" y2="-26" stroke="url(#sparkGrad)" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- 9. Thin Glowing Line Traveling Horizontally Across the Banner -->
+  <line x1="60" y1="216" x2="1140" y2="216" stroke="#00f0ff" stroke-width="0.6" stroke-opacity="0.15"/>
+  <g class="laser-traveller" filter="url(#laserGlow)">
+    <line x1="0" y1="216" x2="320" y2="216" stroke="url(#horizonLaser)" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="320" cy="216" r="2.8" fill="#ffffff" filter="url(#particleGlow)"/>
+  </g>
+
+  <!-- 10. Centerpiece Typography: REX -->
+  <!-- Subtle Top Decorative Node Indicator -->
+  <g transform="translate(600, 68)">
+    <circle class="node-pulse-cyan" cx="-45" cy="0" r="2" fill="#38bdf8"/>
+    <line x1="-35" y1="0" x2="35" y2="0" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.4"/>
+    <circle class="node-pulse-purple" cx="45" cy="0" r="2" fill="#c084fc"/>
+    <text x="0" y="3" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#94a3b8" letter-spacing="3" text-anchor="middle">// PORTFOLIO</text>
+  </g>
+
+  <!-- Main "REX" Text -->
+  <text class="rex-main-title" x="608" y="162" font-size="78" fill="url(#rexTitleGrad)" text-anchor="middle">REX</text>
+
+  <!-- Hairline Decorative Divider Accent -->
+  <g transform="translate(600, 184)">
+    <line x1="-160" y1="0" x2="-20" y2="0" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.3"/>
+    <circle cx="0" cy="0" r="2" fill="#38bdf8" class="node-pulse-cyan"/>
+    <line x1="20" y1="0" x2="160" y2="0" stroke="#c084fc" stroke-width="0.8" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- Tagline: "CODE • CREATE • INNOVATE" -->
+  <text class="rex-tagline" x="604" y="206" font-size="13" fill="url(#taglineGrad)" text-anchor="middle">CODE <tspan fill="#38bdf8">•</tspan> CREATE <tspan fill="#f472b6">•</tspan> INNOVATE</text>
+
+  <!-- 11. Minimalist Sci-Fi HUD Corner Brackets -->
+  <!-- Top-Left -->
+  <path d="M 22 42 L 22 22 L 42 22" fill="none" stroke="#00f0ff" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.6"/>
+  <!-- Top-Right -->
+  <path d="M 1178 42 L 1178 22 L 1158 22" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.6"/>
+  <!-- Bottom-Left -->
+  <path d="M 22 318 L 22 338 L 42 338" fill="none" stroke="#00f0ff" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.6"/>
+  <!-- Bottom-Right -->
+  <path d="M 1178 318 L 1178 338 L 1158 338" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.6"/>
+
+  <!-- Sleek Minimal Outer Perimeter -->
+  <rect x="8" y="8" width="1184" height="344" rx="8" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.12"/>
+</svg>
