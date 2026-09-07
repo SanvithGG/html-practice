@@ -1,5 +1,8 @@
-# Ignore notes folder
+# Ignore notes and test notes
 Notes/
+Test/
+.agents/
 
 # Dependencies
 node_modules/
+
