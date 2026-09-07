@@ -532,3 +532,10 @@
 
 // let res = arr.sort((a, b) => a-b);
 // console.log(res);
+
+let arr = [2,3,4,3,5,6,2,3,4,5]
+let res = arr.findIndex((ele)=>{
+    return ele>4
+})
+console.log(res);
+console.log(arr[res]);
