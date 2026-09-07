@@ -452,18 +452,36 @@
 
 
 // Example p : 2
-let fruit = ["Appke", "Mango", "Bannana", "Orange", "Grapes"];
+// let fruit = ["Appke", "Mango", "Bannana", "Orange", "Grapes"];
 
-let res = fruit.map((ele)=>{
-    if(ele.endsWith('e'))
-        return ele
-    ele
-    return null
-})
-console.log(res);
+// let res = fruit.map((ele)=>{
+//     if(ele.endsWith('e'))
+//         return ele
+//     ele
+//     return null
+// })
+// console.log(res);
 
 // Filter :
 // let res = fruit.filter((ele)=>{
 //     return ele.endsWith('e')
 // })
 // console.log(res);
+
+// reduce function : reducing the value of the arra to the single level 
+
+// let arr = [2,3,4]
+
+// arr.reduce((prev , curr)=>{
+//     let sum = prev + curr;
+//     console.log(`${prev} + ${curr} = ${sum}`);
+//     return sum;
+// })
+
+// let res = arr.reduce((prev , curr)=>{
+//     return prev + curr;
+// })
+// console.log(res);
+
+
+
